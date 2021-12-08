@@ -14,7 +14,7 @@ import (
 func main() {
 	helpInfo := flag.Bool("h", false, "Displays this help file")
 	pathToRun := flag.String("path", "c:", `Path to check. Network example("\\client.local\sharename")`)
-	extToFind := flag.String("ext", `.ps1,.bat,.sh,.py,.rdp`, "Extentions to search for")
+	extToFind := flag.String("ext", `.ps1,.bat,.sh,.py,.rdp,.txt`, "Extentions to search for")
 	searchFile := flag.Bool("search", false, "Search file for strings that you would typically find with hard coded creds ")
 	flag.Parse()
 
