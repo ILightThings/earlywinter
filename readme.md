@@ -5,12 +5,21 @@ Will print out file paths of discovered files.
 ```
 Usage of C:\dev\earlywinter.exe:
   -ext string
-        Extentions to search for (default ".ps1,.bat,.sh,.py")
+        Extentions to search for (default ".ps1,.bat,.sh,.py,.txt")
   -h    Displays this help file
   -path string
         Path to check. Network example("\\client.local\sharename") (default "c:")
 ```
-
+Current sensitive strings are 
+```
+/u:
+/p:
+psexec
+net user
+net use
+net account
+/runas
+```
 
 If the binary is searching locally, will ignore common system folders:
 ```
